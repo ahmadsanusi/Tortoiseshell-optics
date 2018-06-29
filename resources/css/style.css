@@ -9,14 +9,12 @@ body {
 }
 
 .container{
-  border: 1px solid black;
   max-width:960px;
   margin: auto;
 
 }
 
 .flex {
-  border: 1px solid black;
   display: flex;
 
 
@@ -38,7 +36,6 @@ nav {
   align-items: center;
   background-color: cadetblue;
   color: white;
-  border: 1px solid black;
 
 }
 
@@ -58,7 +55,6 @@ nav img {
 
 nav ul {
   margin-right: 1rem;
-  border: 1px solid black;
 
 }
 
@@ -67,7 +63,6 @@ nav li {
   display: inline;
   margin-top: 1rem;
   margin-right: 2rem;
-  border: 1px solid black;
 }
 
 .turned-menu {
@@ -79,7 +74,6 @@ header .flex {
 }
 
 .main-banner{
-  border: 1px solid black;
   display: inline-block;
   padding: 1.5rem 5rem;
   margin-top: 10rem;
@@ -125,6 +119,31 @@ h1{
   }
 }
 
+@media only screen and (max-width: 560px) {
+  header div span {
+    display: none;
+  }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .main-banner {
+    margin-top: 9rem;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    width: 100%;
+  }
+
+  .main-banner{
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
+
 
 
 
@@ -134,6 +153,16 @@ h1{
   display: flex;
   justify-content:center;
 }
+@media only screen and (max-width: 560px) {
+  .supporting{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3rem;
+  }
+}
+
+  /*service section*/
 
 .service{
   display: flex;
@@ -145,19 +174,29 @@ h1{
   margin: 3rem;
   width: 5rem;
   text-align: center;
-  border: 1px solid black;
 }
 
 .service img {
   width: 5rem;
   margin-bottom: 1rem;
-
-
 }
+
+
 
 .service img.paper-icon{
   width: 3.5rem;
 }
+
+
+@media only screen and (max-width: 560px) {
+  .service {
+    height: auto;
+    margin: 1.54rem;
+    font-size: 0.77rem;
+  }
+}
+
+
 
 
 /* info section*/
@@ -180,6 +219,27 @@ h1{
   padding: 1rem 0;
 }
 
+@media only screen and (max-width: 560px) {
+  .info {
+    width: 100%;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .info p{
+    padding: 1rem;
+    font-size: 0.77rem;
+  }
+}
+
+
+
+
 /*footer section*/
 
 footer {
@@ -193,4 +253,14 @@ footer img {
   height: 1.5rem;
   margin-right: 1rem;
   margin-left: 2rem;
+}
+
+@media only screen and (max-width: 560px) {
+  footer {
+    justify-content: center;
+  }
+
+  footer div {
+    display: none;
+  }
 }
